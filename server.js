@@ -11,6 +11,13 @@ server.head('/hello/:name', respond);
 
 var a = "welcome"
 
+let a = "123"
+let b = 123
+
+if(a===b){
+    console.log("a===b")
+}
+
 server.listen(8080, function() {
   console.log('%s listening at %s', server.name, server.url);
 });
