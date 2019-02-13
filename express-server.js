@@ -7,9 +7,14 @@ app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
 
-app.get("/url", (req, res, next) => {
-    res.json(["Tony","Lisa","Michael","Ginger","Food"]);
+app.get("/people", (req, res, next) => {
+    res.json(["Tony","Lisa","Michael"]);
 });
+
+app.get("/food", (req, res, next) => {
+    res.json(["Fries","Rice","Burgers","Pasta","Pizza"]);
+});
+
 
 // POST http://localhost:8080/api/users
 // parameters sent with 
